@@ -15,6 +15,12 @@ if(navClose){
     })
 }
 
+if(navMenu){
+    navMenu.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
 
 /* Skills Tabs */
 const tabs = document.querySelectorAll('[data-target]'),
