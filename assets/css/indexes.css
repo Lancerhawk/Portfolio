@@ -290,7 +290,7 @@ input {
 
 /* Home Section */
 .home {
-    background: url("/sources/myphoto_bkg.png");
+    background: url("../../sources/myphoto_bkg.png");
     background-size: cover;
     background-position: center center;
     height: 100vh;
