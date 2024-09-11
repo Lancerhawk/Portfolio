@@ -154,3 +154,32 @@ function navHighlighter(){
         }
     })
 }
+
+let certCurrentSlide = 0;
+
+function showCertSlide(index) {
+  const slides = document.querySelectorAll('.cert-slider-image');
+  const totalSlides = slides.length;
+
+  if (index >= totalSlides) {
+    certCurrentSlide = 0;
+  } else if (index < 0) {
+    certCurrentSlide = totalSlides - 1;
+  } else {
+    certCurrentSlide = index;
+  }
+
+  const offset = -certCurrentSlide * 100;
+  document.querySelector('.cert-slider').style.transform = `translateX(${offset}%)`;
+}
+
+function nextCertSlide() {
+  showCertSlide(certCurrentSlide + 1);
+}
+
+function prevCertSlide() {
+  showCertSlide(certCurrentSlide - 1);
+}
+
+
+

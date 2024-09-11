@@ -64,7 +64,7 @@
 .block1{
     animation: appearblock1 linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 40%;
 }
 
 @keyframes appearblock{
@@ -109,7 +109,7 @@
 .buttonanim{
     animation: appearblock linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 30%;
+    animation-range: entry 0% cover 20%;
 }
 
 @keyframes appearblock2{
@@ -125,7 +125,7 @@
 .block2{
     animation: appearblock2 linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 40%;
 }
 
 /* Responsive things */
@@ -688,6 +688,125 @@ input {
     display: block;
     background-color: var(--skin-color);
 }
+
+/* Certification Section */
+.certifications{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+.cert-slider-container {
+    position: relative;
+    width: 60%;
+    /* height: 90vh; */
+    max-width: 900px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1200px){
+    .cert-slider-container {
+        width: 70%;
+        min-width: 700px;
+    }
+    .certifications{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .certifications{
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .cert-slider-container {
+        min-width: 500px;
+    }
+    .certifications{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .cert-slider-container {
+        min-width: 400px;
+    }
+    .certifications{
+        height: 40vh;
+    }
+    .cert-prev-btn {
+        left: 10px;
+        width: 30px;
+      }
+      
+      .cert-next-btn {
+        right: 10px;
+        width: 60px;
+      }
+}
+@media screen and (max-width: 430px){
+    .cert-slider-container {
+        min-width: 300px;
+    }
+    .certifications{
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .cert-slider-container {
+        min-width: 200px;
+    }
+    .certifications{
+        height: 20vh;
+    }
+}
+  
+  .cert-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  
+  .cert-slider-image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+  }
+  
+  .cert-prev-btn, .cert-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  
+  .cert-prev-btn {
+    left: 10px;
+    width: 60px;
+  }
+  
+  .cert-next-btn {
+    right: 10px;
+    width: 60px;
+  }
+  
+  .cert-prev-btn:hover, .cert-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+
 
 /* Work Section */
 .work_container {
